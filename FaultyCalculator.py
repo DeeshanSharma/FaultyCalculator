@@ -1,35 +1,37 @@
-#Design a calculator which will correctly solve all the problems except the following ones:
-#45 * 3 = 555, 56 + 9 = 77, 56 / 6 = 4
-#Your program should take operator and two numbers as input from the user and then return the result
+# Design a calculator which will correctly solve all the problems except the following ones:
+# 45 * 3 = 555, 56 + 9 = 77, 56 / 6 = 4
+# Your program should take operator and two numbers as input from the user and then return the result
 
 
-op1 = int(input("Enter operator 1 = "))   # Operator no 1
-op2 = int(input("Enter operator 2 = "))   # Operator no 2
-op = input("Enter the operation (+, -, *, /)= ")    # Operation to be performed
+First_no = eval(input("Enter First no. = "))  # it takes the first no.
+Second_no = eval(input("Enter Second no. = "))  # it takes the second no.
+operator_choice = input("Enter the operation (+, -, *, /)= ")  # Operation selection
 
-exp = [op1, op, op2]    # Expression created using above to be matched with given problems
+exp = [First_no, operator_choice, Second_no]  # Expression created using above to be matched with given problems
 
-# Checking for first expression
-if (exp == [45, '*', 3]):
+# faults in the program
+
+#  first faulty expression
+if exp == [45, '*', 3]:
     print(555)
 
-# Checking for second expression
-elif (exp == [56, '+', 9]):
+# second faulty expression
+elif exp == [56, '+', 9]:
     print(77)
 
-# Checking for third expression
-elif (exp == [56, '/', 6]):
+# third faulty expression
+elif exp == [56, '/', 6]:
     print("4")
 
-# Correct calculations further :-
-elif (op == '+'):
-    print(op1 + op2)
+# Correct calculations  :-
+elif operator_choice == '+':
+    print(First_no + Second_no)
 
-elif (op == '-'):
-    print(op1 - op2)
+elif operator_choice == '-':
+    print(First_no - Second_no)
 
-elif (op == '*'):
-    print(op1 * op2)
+elif operator_choice == '*':
+    print(First_no * Second_no)
 
 else:
-    print(op1 / op2)
+    print(First_no / Second_no)
