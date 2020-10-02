@@ -33,5 +33,8 @@ elif operator_choice == '-':
 elif operator_choice == '*':
     print(First_no * Second_no)
 
-else:
+elif operator_choice == '*':
     print(First_no / Second_no)
+
+else:
+    print("Please enter valid expression")
