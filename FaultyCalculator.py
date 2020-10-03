@@ -1,5 +1,5 @@
 # Design a calculator which will correctly solve all the problems except the following ones:
-# 45 * 3 = 555, 56 + 9 = 77, 56 / 6 = 4
+# 45 * 3 = 555, 56 + 9 = 77, 56 / 6 = 4 , 15//4 = 4
 # Your program should take operator and two numbers as input from the user and then return the result
 
 
@@ -22,6 +22,8 @@ elif exp == [56, '+', 9]:
 # third faulty expression
 elif exp == [56, '/', 6]:
     print("4")
+elif exp == [15 // 4]:
+    print(4)
 
 # Correct calculations  :-
 elif operator_choice == '+':
@@ -33,5 +35,7 @@ elif operator_choice == '-':
 elif operator_choice == '*':
     print(First_no * Second_no)
 
+elif operator_choice == '*':
+    print(First_no * Second_no)
 else:
     print(First_no / Second_no)
