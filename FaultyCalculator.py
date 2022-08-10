@@ -22,16 +22,12 @@ elif exp == [56, '+', 9]:
 # third faulty expression
 elif exp == [56, '/', 6]:
     print("4")
-
 # Correct calculations  :-
 elif operator_choice == '+':
     print(First_no + Second_no)
-
 elif operator_choice == '-':
     print(First_no - Second_no)
-
 elif operator_choice == '*':
     print(First_no * Second_no)
-
 else:
     print(First_no / Second_no)
